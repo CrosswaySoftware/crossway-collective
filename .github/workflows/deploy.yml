@@ -62,10 +62,10 @@ jobs:
               "aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 365627072396.dkr.ecr.ap-south-1.amazonaws.com",
 
               "echo 🚀 Pull latest image",
-              "docker compose pull palomar-nextjs",
+              "docker compose pull crosswaycollective_nextjs",
 
               "echo 🔁 Restart container",
-              "docker compose up -d --no-deps palomar-nextjs",
+              "docker compose up -d --no-deps crosswaycollective_nextjs",
 
               "echo 🧹 Cleaning unused Docker images",
               "docker image prune -a -f",
