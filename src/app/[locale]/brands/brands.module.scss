@@ -1,0 +1,30 @@
+@use "@/styles/tokens" as *;
+
+.section {
+  padding: $space-section 0;
+  background: $color-canvas;
+}
+
+.grid {
+  max-width: $container-max;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.75rem;
+
+  @media (min-width: 620px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 1000px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.cell {
+  display: flex;
+
+  > * {
+    width: 100%;
+  }
+}

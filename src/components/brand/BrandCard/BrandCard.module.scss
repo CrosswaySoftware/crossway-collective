@@ -1,0 +1,119 @@
+@use "@/styles/tokens" as *;
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background: $color-canvas-bright;
+  border: 1px solid $color-line;
+  border-radius: $radius-lg;
+  overflow: hidden;
+  transition: transform 0.5s $ease-out-expo, box-shadow 0.5s $ease-out-expo, border-color 0.5s $ease-out-expo;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: $shadow-lift;
+    border-color: color-mix(in srgb, var(--brand-accent) 45%, transparent);
+
+    .img {
+      transform: scale(1.06);
+    }
+  }
+}
+
+.media {
+  position: relative;
+  display: block;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.img {
+  object-fit: cover;
+  transition: transform 0.7s $ease-out-expo;
+}
+
+.shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, color-mix(in srgb, var(--brand-ink) 55%, transparent), transparent 45%);
+}
+
+.badge {
+  position: absolute;
+  inset-inline-start: 0.9rem;
+  bottom: 0.9rem;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: $tracking-wide;
+  text-transform: uppercase;
+  color: $color-white;
+  background: color-mix(in srgb, var(--brand-accent) 88%, black 4%);
+  padding: 0.38rem 0.75rem;
+  border-radius: $radius-pill;
+  box-shadow: $shadow-soft;
+}
+
+.body {
+  padding: 1.5rem 1.6rem 1.7rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.heading {
+  font-family: $font-sans;
+  font-size: $text-xs;
+  font-weight: 700;
+  letter-spacing: $tracking-wider;
+  text-transform: uppercase;
+  color: var(--brand-accent);
+}
+
+.name {
+  font-size: $text-2xl;
+  margin: 0.4rem 0 0;
+  color: $color-ink;
+}
+
+.byline {
+  font-family: $font-sans;
+  font-size: $text-sm;
+  font-weight: 500;
+  color: $color-ink-faint;
+  letter-spacing: $tracking-wide;
+}
+
+.tagline {
+  font-family: $font-display;
+  font-style: italic;
+  font-size: $text-lg;
+  color: $color-ink-soft;
+  margin: 0.55rem 0 1.3rem;
+  line-height: $leading-snug;
+}
+
+.cta {
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: $text-sm;
+  font-weight: 600;
+  letter-spacing: $tracking-wide;
+  color: var(--brand-accent);
+
+  span {
+    transition: transform 0.3s $ease-out-expo;
+  }
+
+  &:hover {
+    color: var(--brand-accent);
+    span {
+      transform: translateX(4px);
+    }
+  }
+}
+
+[dir="rtl"] .cta span {
+  transform: scaleX(-1);
+}

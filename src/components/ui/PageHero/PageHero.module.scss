@@ -1,0 +1,52 @@
+@use "@/styles/tokens" as *;
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  background: radial-gradient(120% 120% at 80% 0%, #1c294e, $color-navy 55%, $color-navy-deep);
+  color: $color-white;
+  padding: calc(var(--cc-header-h) + clamp(2.5rem, 6vw, 5rem)) 0 clamp(2.5rem, 6vw, 4.5rem);
+  isolation: isolate;
+}
+
+.glow {
+  position: absolute;
+  width: 40vw;
+  height: 40vw;
+  top: -10%;
+  inset-inline-end: -6%;
+  background: radial-gradient(circle, rgba(199, 154, 63, 0.4), transparent 65%);
+  filter: blur(70px);
+  z-index: -1;
+}
+
+.inner {
+  max-width: $container-max;
+  margin-inline: auto;
+}
+
+.eyebrow {
+  color: $color-gold-soft;
+  margin-bottom: 1.1rem;
+}
+
+.tick {
+  width: 26px;
+  height: 1px;
+  background: $color-gold;
+}
+
+.title {
+  margin: 0;
+  color: $color-white;
+  font-size: clamp(2.3rem, 4.8vw, 3.6rem);
+  max-width: 18ch;
+}
+
+.subtitle {
+  margin: 1.25rem 0 0;
+  max-width: 60ch;
+  color: $on-dark-muted;
+  font-size: $text-md;
+  line-height: $leading-relaxed;
+}

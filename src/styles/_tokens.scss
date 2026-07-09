@@ -1,0 +1,97 @@
+// Crossway Collective — culinary editorial (midnight navy, burnished gold, warm cream)
+// Distinct from Crossway Hotels: serif display + navy/gold dining palette.
+
+// Typography — Cormorant for display headings, DM Sans for UI/body, Noto Sans Arabic for RTL
+$font-display: var(--font-cormorant), Georgia, "Times New Roman", serif;
+$font-sans: var(--font-dm-sans), system-ui, -apple-system, sans-serif;
+$font-arabic: var(--font-arabic), var(--font-dm-sans), sans-serif;
+
+// Type scale (rem)
+$text-xs: 0.75rem; // 12px — micro labels
+$text-sm: 0.8125rem; // 13px — small UI
+$text-base: 1rem; // 16px — body
+$text-md: 1.0625rem; // 17px — lead / comfortable body
+$text-lg: 1.1875rem; // 19px — subheads
+$text-xl: 1.375rem; // 22px — card titles
+$text-2xl: 1.75rem; // 28px — section subtitles
+$text-3xl: 2.25rem; // 36px
+$text-4xl: 2.85rem; // 46px
+$text-hero: clamp(2.6rem, 6.2vw, 5rem); // h1 hero (serif display)
+
+// Line-height
+$leading-none: 1;
+$leading-tight: 1.08;
+$leading-snug: 1.25;
+$leading-normal: 1.45;
+$leading-relaxed: 1.7; // body default
+$leading-loose: 1.85;
+
+// Letter-spacing
+$tracking-tighter: -0.03em;
+$tracking-tight: -0.015em;
+$tracking-snug: -0.008em;
+$tracking-normal: 0;
+$tracking-wide: 0.01em;
+$tracking-wider: 0.08em; // labels
+$tracking-widest: 0.22em; // eyebrow / uppercase UI
+
+// ── Colour: warm cream canvas, midnight navy ink, burnished gold ──────────────
+$color-canvas: #f7f3ea; // warm cream
+$color-canvas-muted: #efe8d8;
+$color-canvas-bright: #fffdf7;
+$color-cream-deep: #e9dfc9;
+
+$color-ink: #16203c; // deep navy ink (text)
+$color-ink-soft: #2a3556;
+$color-ink-muted: rgba(22, 32, 60, 0.62);
+$color-ink-faint: rgba(22, 32, 60, 0.42);
+$color-line: rgba(22, 32, 60, 0.12);
+$color-fog: rgba(22, 32, 60, 0.04);
+
+// Brand navy surfaces (header, footer, dark bands) — matches Crossway / Svanna logos
+$color-navy: #121a36;
+$color-navy-deep: #0c1326;
+$color-navy-elevated: #1c274a;
+
+// Burnished gold accent + warm culinary terracotta secondary
+$color-gold: #c79a3f;
+$color-gold-soft: #d9b96d;
+$color-gold-bright: #e7cf94;
+$color-gold-deep: #a87d2c;
+$color-terracotta: #c2622d;
+$color-terracotta-soft: #d98b5a;
+
+$color-white: #fffdf7;
+
+// On-dark text tones
+$on-dark: rgba(247, 243, 234, 0.9);
+$on-dark-muted: rgba(247, 243, 234, 0.62);
+$on-dark-faint: rgba(247, 243, 234, 0.12);
+
+// Spacing rhythm
+$space-section: clamp(3.5rem, 7vw, 7rem);
+$space-tight: clamp(1.75rem, 3.5vw, 2.75rem);
+$container-max: min(1240px, 92vw);
+$container-narrow: min(880px, 92vw);
+$header-h: 84px;
+
+$ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+$ease-soft: cubic-bezier(0.22, 0.61, 0.36, 1);
+
+$radius-xs: 4px;
+$radius-sm: 8px;
+$radius-md: 16px;
+$radius-lg: 26px;
+$radius-xl: 40px;
+$radius-pill: 999px;
+
+$shadow-soft: 0 18px 48px -28px rgba(12, 19, 38, 0.45);
+$shadow-lift: 0 26px 70px -34px rgba(12, 19, 38, 0.55);
+$shadow-card: 0 14px 40px -26px rgba(12, 19, 38, 0.4);
+
+// Legacy aliases
+$color-text: $color-ink;
+$color-text-muted: $color-ink-muted;
+$color-page-bg: $color-canvas;
+$color-accent: $color-gold;
+$color-accent-soft: $color-gold-soft;

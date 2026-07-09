@@ -1,0 +1,138 @@
+@use "@/styles/tokens" as *;
+
+.footer {
+  background: $color-navy-deep;
+  color: $on-dark;
+  padding: clamp(3rem, 6vw, 5rem) 0 1.75rem;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, $color-gold 50%, transparent);
+    opacity: 0.55;
+  }
+}
+
+.inner {
+  max-width: $container-max;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+
+  @media (min-width: 620px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: 980px) {
+    grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+    gap: 2rem;
+  }
+}
+
+.brandCol {
+  max-width: 320px;
+}
+
+.logo {
+  width: auto;
+  height: auto;
+  max-width: 200px;
+  padding: 0.9rem 1.1rem;
+  background: $color-canvas-bright;
+  border-radius: $radius-md;
+  box-shadow: $shadow-soft;
+}
+
+.tagline {
+  margin-top: 1.25rem;
+  font-family: $font-display;
+  font-style: italic;
+  font-size: $text-lg;
+  color: $color-gold-soft;
+  line-height: $leading-snug;
+}
+
+.col {
+  min-width: 0;
+}
+
+.headingGap {
+  margin-top: 1.75rem;
+}
+
+.heading {
+  font-family: $font-sans;
+  font-size: $text-xs;
+  font-weight: 700;
+  letter-spacing: $tracking-widest;
+  text-transform: uppercase;
+  color: $color-white;
+  margin: 0 0 1.1rem;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+
+  a {
+    color: $on-dark-muted;
+    font-size: $text-sm;
+
+    &:hover {
+      color: $color-gold-bright;
+    }
+  }
+}
+
+.byline {
+  display: block;
+  font-size: 0.68rem;
+  color: rgba(247, 243, 234, 0.4);
+  letter-spacing: $tracking-wide;
+}
+
+.address {
+  color: $on-dark-muted;
+  font-size: $text-sm;
+  line-height: $leading-relaxed;
+  max-width: 260px;
+}
+
+.bar {
+  max-width: $container-max;
+  margin: clamp(2.5rem, 5vw, 3.5rem) auto 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid $on-dark-faint;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @media (min-width: 720px) {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  p {
+    margin: 0;
+    font-size: $text-xs;
+    color: rgba(247, 243, 234, 0.5);
+  }
+}
+
+.partOf a {
+  color: rgba(247, 243, 234, 0.5);
+
+  &:hover {
+    color: $color-gold-soft;
+  }
+}

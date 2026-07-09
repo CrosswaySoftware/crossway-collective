@@ -1,0 +1,47 @@
+@use "@/styles/tokens" as *;
+
+.wrap {
+  max-width: $container-narrow;
+  margin-inline: auto;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: calc(var(--cc-header-h) + 3rem) 1.5rem 4rem;
+}
+
+.code {
+  font-family: $font-display;
+  font-size: clamp(4rem, 12vw, 8rem);
+  font-weight: 600;
+  color: $color-gold;
+  line-height: 1;
+}
+
+.title {
+  margin: 0.5rem 0 0;
+}
+
+.text {
+  color: $color-ink-muted;
+  margin: 0.75rem 0 2rem;
+}
+
+.btn {
+  display: inline-flex;
+  padding: 0.85rem 2rem;
+  border-radius: $radius-pill;
+  background: $color-navy;
+  color: $color-white;
+  font-weight: 600;
+  font-size: $text-sm;
+  letter-spacing: $tracking-wider;
+  text-transform: uppercase;
+
+  &:hover {
+    background: $color-navy-deep;
+    color: $color-gold-bright;
+  }
+}

@@ -1,0 +1,302 @@
+@use "@/styles/tokens" as *;
+
+.header {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 100;
+  transition: background-color 0.4s $ease-out-expo, box-shadow 0.4s $ease-out-expo, border-color 0.4s $ease-out-expo;
+  background: transparent;
+  border-bottom: 1px solid transparent;
+}
+
+.solid {
+  background: rgba(247, 243, 234, 0.92);
+  backdrop-filter: blur(14px);
+  border-bottom-color: $color-line;
+  box-shadow: 0 10px 40px -30px rgba(12, 19, 38, 0.5);
+}
+
+.inner {
+  max-width: $container-max;
+  margin-inline: auto;
+  height: var(--cc-header-h);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+/* ── Brand logo ───────────────────────────────────────────── */
+.brand {
+  display: inline-flex;
+  align-items: center;
+  flex: none;
+
+  &:hover {
+    color: inherit;
+  }
+}
+
+.logo {
+  display: block;
+  width: auto;
+  height: 72px;
+  /* Navy artwork is invisible over the dark hero — render it white there. */
+  filter: brightness(0) invert(1);
+  transition: filter 0.4s $ease-out-expo, height 0.4s $ease-out-expo;
+
+  @media (max-width: 640px) {
+    height: 56px;
+  }
+}
+
+/* Once the bar turns solid (cream), show the logo in its original navy + gold. */
+.solid .logo {
+  filter: none;
+}
+
+/* ── Desktop nav ──────────────────────────────────────────── */
+.nav {
+  display: none;
+  align-items: center;
+  gap: 2.1rem;
+
+  @media (min-width: 940px) {
+    display: flex;
+  }
+}
+
+.link {
+  position: relative;
+  font-family: $font-sans;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: $tracking-wider;
+  text-transform: uppercase;
+  color: $on-dark;
+  padding: 0.4rem 0;
+  transition: color 0.3s $ease-out-expo;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 1.5px;
+    background: $color-gold;
+    transition: width 0.35s $ease-out-expo;
+  }
+
+  &:hover {
+    color: $color-gold-bright;
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+.linkActive {
+  color: $color-gold-bright;
+  &::after {
+    width: 100%;
+  }
+}
+
+.solid .link {
+  color: $color-ink-soft;
+
+  &:hover,
+  &.linkActive {
+    color: $color-gold-deep;
+  }
+}
+
+.solid .linkActive {
+  color: $color-gold-deep;
+}
+
+/* ── Actions ──────────────────────────────────────────────── */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.localeWrap {
+  display: none;
+
+  @media (min-width: 640px) {
+    display: block;
+  }
+}
+
+.orderBtn {
+  display: none;
+  align-items: center;
+  padding: 0.62rem 1.4rem;
+  border-radius: $radius-pill;
+  background: linear-gradient(100deg, $color-gold, $color-gold-deep);
+  color: $color-navy-deep;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: $tracking-wider;
+  text-transform: uppercase;
+  transition: transform 0.3s $ease-out-expo, box-shadow 0.3s $ease-out-expo, color 0.3s;
+  box-shadow: 0 12px 30px -16px rgba(199, 154, 63, 0.8);
+
+  &:hover {
+    transform: translateY(-1px);
+    color: $color-navy-deep;
+    box-shadow: 0 16px 38px -14px rgba(199, 154, 63, 0.9);
+  }
+
+  @media (min-width: 940px) {
+    display: inline-flex;
+  }
+}
+
+.sheetOrder {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.9rem 1.6rem;
+  border-radius: $radius-pill;
+  background: linear-gradient(100deg, $color-gold, $color-gold-deep);
+  color: $color-navy-deep;
+  font-size: $text-sm;
+  font-weight: 700;
+  letter-spacing: $tracking-wider;
+  text-transform: uppercase;
+}
+
+.burger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid transparent;
+  border-radius: $radius-pill;
+  background: transparent;
+  cursor: pointer;
+
+  @media (min-width: 940px) {
+    display: none;
+  }
+}
+
+.burgerLines {
+  position: relative;
+  width: 22px;
+  height: 14px;
+
+  span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    background: $color-white;
+    transition: transform 0.3s $ease-out-expo, opacity 0.3s $ease-out-expo, background 0.3s;
+
+    &:nth-child(1) {
+      top: 0;
+    }
+    &:nth-child(2) {
+      top: 6px;
+    }
+    &:nth-child(3) {
+      top: 12px;
+    }
+  }
+}
+
+.solid .burgerLines span {
+  background: $color-ink;
+}
+
+.burgerOpen {
+  span:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+  }
+  span:nth-child(2) {
+    opacity: 0;
+  }
+  span:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+  }
+}
+
+/* ── Mobile sheet ─────────────────────────────────────────── */
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  border: 0;
+  background: rgba(12, 19, 38, 0.5);
+  backdrop-filter: blur(2px);
+  cursor: pointer;
+}
+
+.sheet {
+  position: fixed;
+  top: var(--cc-header-h);
+  inset-inline: 0;
+  z-index: 95;
+  background: $color-canvas-bright;
+  border-top: 1px solid $color-line;
+  padding: 1.5rem 7vw 2.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  box-shadow: $shadow-lift;
+  animation: sheetIn 0.35s $ease-out-expo;
+}
+
+@keyframes sheetIn {
+  from {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.sheetNav {
+  display: flex;
+  flex-direction: column;
+}
+
+.sheetLink {
+  font-family: $font-display;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: $color-ink;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid $color-line;
+
+  &:hover {
+    color: $color-gold-deep;
+    padding-inline-start: 0.4rem;
+  }
+}
+
+.sheetLinkActive {
+  color: $color-gold-deep;
+}
+
+.sheetFoot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.sheetMail {
+  font-size: $text-sm;
+  color: $color-ink-muted;
+}

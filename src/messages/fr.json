@@ -1,0 +1,189 @@
+{
+  "LocaleSwitcher": {
+    "label": "Langue",
+    "en": "English",
+    "ar": "العربية",
+    "fr": "Français"
+  },
+  "Nav": {
+    "brandName": "Crossway Collective",
+    "tagline": "La maison des grandes marques culinaires de Chennai",
+    "home": "Accueil",
+    "brands": "Nos Marques",
+    "about": "À propos",
+    "contact": "Contact",
+    "orderNow": "Commander",
+    "menuToggle": "Ouvrir le menu",
+    "menuClose": "Fermer le menu",
+    "menuTitle": "Menu principal",
+    "mailUs": "collective@crosswayhotels.com",
+    "phone": "+91 97512 77770"
+  },
+  "Metadata": {
+    "homeTitle": "Crossway Collective — La maison des grandes marques culinaires de Chennai",
+    "homeDescription": "Crossway Collective réunit des marques culinaires uniques conçues pour les gourmands d'aujourd'hui — des saveurs tamoules authentiques et classiques indiens à la cuisine mondiale et aux desserts premium. Disponible exclusivement sur Swiggy et Zomato à Chennai."
+  },
+  "Home": {
+    "hero": {
+      "eyebrow": "De la maison Crossway",
+      "title": "La maison des",
+      "titleAccent": "grandes marques culinaires",
+      "subtitle": "Crossway Collective réunit des marques culinaires uniques conçues pour les gourmands d'aujourd'hui. Des saveurs tamoules authentiques et classiques indiens à la cuisine mondiale et aux desserts premium, nos marques offrent des expériences gastronomiques d'exception livrées jusqu'à votre porte.",
+      "availability": "Disponible exclusivement sur Swiggy et Zomato à Chennai.",
+      "cta": "Commandez vos favoris aujourd'hui",
+      "ctaBrands": "Découvrir nos marques"
+    },
+    "about": {
+      "eyebrow": "À propos de Crossway Collective",
+      "title": "Un collectif. Des envies multiples.",
+      "p1": "Crossway Collective est un portefeuille soigneusement sélectionné de marques culinaires créées pour combler chaque envie, chaque humeur et chaque occasion.",
+      "p2": "Fondée sur la passion des ingrédients de qualité, des recettes authentiques et d'expériences client constantes, chaque marque du Collectif possède sa propre identité culinaire tout en partageant le même engagement envers l'excellence.",
+      "p3": "Que vous recherchiez de réconfortants repas sud-indiens, des favoris indiens pleins de saveur, des plaisirs façon café, une cuisine réconfortante du monde ou des desserts artisanaux, Crossway Collective a quelque chose pour tout le monde.",
+      "fresh1": "Préparé frais",
+      "fresh2": "Emballé avec soin",
+      "fresh3": "Livré jusqu'à votre porte"
+    },
+    "brands": {
+      "eyebrow": "Nos Marques",
+      "title": "Cinq marques. Un collectif.",
+      "intro": "Chaque marque du Collectif possède sa propre identité culinaire tout en partageant le même engagement envers la qualité et le goût.",
+      "viewBrand": "Découvrir",
+      "availability": "Disponible sur Swiggy et Zomato"
+    },
+    "why": {
+      "eyebrow": "Pourquoi commander chez Crossway Collective",
+      "title": "Une bonne cuisine. Livrée avec constance.",
+      "items": {
+        "quality": {
+          "title": "La qualité d'abord",
+          "desc": "Des ingrédients frais et des recettes soigneusement élaborées."
+        },
+        "brands": {
+          "title": "Plusieurs marques. Un collectif de confiance.",
+          "desc": "Différentes cuisines et expériences au sein d'un même groupe."
+        },
+        "delivery": {
+          "title": "Optimisé pour la livraison",
+          "desc": "Pensé spécifiquement pour la livraison et la vente à emporter."
+        },
+        "taste": {
+          "title": "Goût et qualité constants",
+          "desc": "Chaque commande préparée avec soin et attention aux détails."
+        },
+        "ordering": {
+          "title": "Commande pratique",
+          "desc": "Disponible sur les principales plateformes de livraison."
+        }
+      }
+    },
+    "serving": {
+      "eyebrow": "Au service de Chennai",
+      "title": "Livraison partout à Chennai",
+      "text": "Nos marques sont disponibles via Swiggy et Zomato dans plusieurs zones de service à Chennai.",
+      "searchLabel": "Recherchez",
+      "platformNote": "sur votre plateforme de livraison préférée."
+    },
+    "finalCta": {
+      "eyebrow": "Une envie de gourmandise ?",
+      "title": "Une envie de gourmandise ?",
+      "text": "Explorez nos marques et découvrez votre prochain plat favori.",
+      "fresh": "Préparé frais. Emballé avec soin. Livré partout à Chennai.",
+      "button": "Commandez sur Swiggy et Zomato"
+    }
+  },
+  "About": {
+    "meta": {
+      "title": "À propos de Crossway Collective",
+      "description": "Un collectif. Des envies multiples. Un portefeuille soigneusement sélectionné de marques culinaires de la maison Crossway, livrant à Chennai sur Swiggy et Zomato."
+    },
+    "hero": {
+      "eyebrow": "À propos de Crossway Collective",
+      "title": "Un collectif. Des envies multiples.",
+      "subtitle": "Un portefeuille soigneusement sélectionné de marques culinaires créées pour combler chaque envie, chaque humeur et chaque occasion."
+    },
+    "story": {
+      "p1": "Crossway Collective est un portefeuille soigneusement sélectionné de marques culinaires créées pour combler chaque envie, chaque humeur et chaque occasion.",
+      "p2": "Fondée sur la passion des ingrédients de qualité, des recettes authentiques et d'expériences client constantes, chaque marque du Collectif possède sa propre identité culinaire tout en partageant le même engagement envers l'excellence.",
+      "p3": "Que vous recherchiez de réconfortants repas sud-indiens, des favoris indiens pleins de saveur, des plaisirs façon café, une cuisine réconfortante du monde ou des desserts artisanaux, Crossway Collective a quelque chose pour tout le monde."
+    }
+  },
+  "BrandsPage": {
+    "meta": {
+      "title": "Nos Marques",
+      "description": "Découvrez les marques culinaires de Crossway Collective : Svanna, Pucca South, Mirea Café, The Saddle Room et Reejo Bakes — disponibles sur Swiggy et Zomato à Chennai."
+    },
+    "eyebrow": "Nos Marques",
+    "title": "Un collectif. Des envies multiples.",
+    "subtitle": "Cinq marques culinaires distinctes, chacune avec sa propre identité — toutes partageant le même engagement envers la qualité et le goût."
+  },
+  "BrandDetail": {
+    "backToBrands": "Toutes les marques",
+    "perfectForLabel": "Parfait pour",
+    "availableLabel": "Disponible sur",
+    "galleryLabel": "De la cuisine",
+    "otherBrands": "À découvrir aussi",
+    "orderCta": "Commander",
+    "metaSuffix": "Crossway Collective"
+  },
+  "Brands": {
+    "svanna": {
+      "heading": "Le meilleur des saveurs indiennes",
+      "tagline": "Une célébration du riche patrimoine culinaire indien.",
+      "description": "Des biryanis parfumés et currys savoureux aux favoris régionaux et spécialités signées par le chef, Svanna réunit le meilleur de la cuisine indienne dans chaque commande.",
+      "perfectFor": ["Repas en famille", "Déjeuners au bureau", "Festins du week-end", "Occasions spéciales"]
+    },
+    "pucca": {
+      "heading": "Les saveurs du Sud de l'Inde",
+      "tagline": "Des saveurs sud-indiennes authentiques inspirées des riches traditions culinaires du Tamil Nadu et du Kerala.",
+      "description": "Pucca South réunit des recettes régionales chéries, des ingrédients locaux frais et des techniques de cuisson ancestrales pour créer des repas savoureux qui célèbrent la vibrante culture culinaire du Sud de l'Inde. Des classiques tamouls réconfortants aux spécialités du Kerala, chaque plat est préparé pour offrir la chaleur et l'authenticité de la maison.",
+      "perfectFor": ["Repas sud-indiens authentiques", "Favoris traditionnels du Tamil Nadu et du Kerala", "Repas de famille à la maison", "Cuisine réconfortante du quotidien"]
+    },
+    "mirea": {
+      "heading": "Cuisine mondiale et pan-asiatique",
+      "tagline": "Des favoris de café contemporains inspirés des saveurs du monde.",
+      "description": "Des plats d'inspiration asiatique et bols réconfortants aux classiques de café et boissons artisanales, Mirea Café offre une expérience culinaire moderne livrée fraîche.",
+      "perfectFor": ["Déjeuners de travail", "Repas décontractés", "Pauses café", "Envies du soir"]
+    },
+    "saddle": {
+      "heading": "Cuisine mondiale et indienne",
+      "tagline": "La cuisine réconfortante sans frontières.",
+      "description": "The Saddle Room réunit les favoris du monde et les classiques indiens, créant une carte parfaite pour chaque humeur et chaque repas.",
+      "perfectFor": ["Commandes groupées", "Plaisirs du week-end", "Amateurs de cuisine réconfortante"]
+    },
+    "reejo": {
+      "heading": "Desserts premium",
+      "tagline": "Conçus pour célébrer les moments les plus doux de la vie.",
+      "description": "Des gâteaux gourmands et pâtisseries artisanales aux desserts premium et favoris de boulangerie, Reejo Bakes livre du bonheur à chaque bouchée.",
+      "perfectFor": ["Anniversaires", "Célébrations", "Cadeaux", "Plaisir du quotidien"]
+    }
+  },
+  "Contact": {
+    "meta": {
+      "title": "Contact",
+      "description": "Contactez Crossway Collective, ou commandez nos marques sur Swiggy et Zomato à Chennai."
+    },
+    "eyebrow": "Contact",
+    "title": "Parlons cuisine",
+    "subtitle": "Pour les partenariats, les demandes de traiteur ou vos retours, notre équipe est à votre écoute. Pour commander, retrouvez-nous sur Swiggy et Zomato à Chennai.",
+    "emailLabel": "E-mail",
+    "phoneLabel": "Appeler",
+    "cityLabel": "Au service de",
+    "orderLabel": "Commander en ligne",
+    "orderText": "Recherchez nos marques sur Swiggy et Zomato pour commander partout à Chennai."
+  },
+  "Footer": {
+    "tagline": "La maison des grandes marques culinaires de Chennai",
+    "brandsHeading": "Nos Marques",
+    "exploreHeading": "Explorer",
+    "orderHeading": "Commander en ligne",
+    "contactHeading": "Contact",
+    "home": "Accueil",
+    "about": "À propos",
+    "brands": "Nos Marques",
+    "contact": "Contact",
+    "swiggy": "Swiggy",
+    "zomato": "Zomato",
+    "partOf": "Membre de la famille d'enseignes d'hospitalité Crossway.",
+    "copyright": "© {year} Crossway Collective. Tous droits réservés."
+  }
+}

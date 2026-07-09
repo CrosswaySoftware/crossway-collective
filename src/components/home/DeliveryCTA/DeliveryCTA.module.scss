@@ -1,0 +1,109 @@
+@use "@/styles/tokens" as *;
+
+.section {
+  padding: $space-section 0;
+  background: $color-canvas;
+}
+
+.inner {
+  max-width: $container-max;
+  margin-inline: auto;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: $radius-xl;
+  background: linear-gradient(120deg, $color-terracotta, #9c4720);
+  color: $color-white;
+  padding: clamp(2.75rem, 6vw, 5rem);
+  text-align: center;
+  isolation: isolate;
+}
+
+.pattern {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  opacity: 0.5;
+  background:
+    radial-gradient(circle at 88% 12%, rgba(231, 207, 148, 0.5), transparent 42%),
+    radial-gradient(circle at 8% 92%, rgba(12, 19, 38, 0.45), transparent 48%);
+}
+
+.content {
+  max-width: 640px;
+  margin-inline: auto;
+}
+
+.eyebrow {
+  color: $color-gold-bright;
+  justify-content: center;
+}
+
+.title {
+  color: $color-white;
+  margin: 1rem 0 0;
+  font-size: clamp(2rem, 4.2vw, 3.25rem);
+}
+
+.text {
+  margin: 1.1rem 0 0;
+  color: rgba(255, 253, 247, 0.9);
+  font-size: $text-md;
+  line-height: $leading-relaxed;
+}
+
+.actions {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btnSwiggy,
+.btnZomato {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.95rem 2.2rem;
+  border-radius: $radius-pill;
+  font-weight: 700;
+  font-size: $text-sm;
+  letter-spacing: $tracking-wider;
+  text-transform: uppercase;
+  transition: transform 0.3s $ease-out-expo, box-shadow 0.3s $ease-out-expo;
+  box-shadow: $shadow-lift;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
+
+.btnSwiggy {
+  background: #fc8019;
+  color: #fff;
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+.btnZomato {
+  background: #e23744;
+  color: #fff;
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+.fresh {
+  margin: 1.75rem 0 0;
+  font-size: $text-sm;
+  font-weight: 600;
+  letter-spacing: $tracking-wide;
+  color: rgba(255, 253, 247, 0.85);
+}

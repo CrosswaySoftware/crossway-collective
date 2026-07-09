@@ -1,0 +1,49 @@
+@use "@/styles/tokens" as *;
+
+.root {
+  max-width: 680px;
+}
+
+.center {
+  margin-inline: auto;
+  text-align: center;
+
+  .eyebrow {
+    justify-content: center;
+  }
+}
+
+.eyebrow {
+  margin-bottom: 1rem;
+}
+
+.tick {
+  width: 26px;
+  height: 1px;
+  background: $color-gold;
+}
+
+.title {
+  font-size: clamp(1.9rem, 3.6vw, 2.9rem);
+  margin: 0;
+  color: $color-ink;
+}
+
+.subtitle {
+  margin: 1.1rem 0 0;
+  color: $color-ink-muted;
+  font-size: $text-md;
+  line-height: $leading-relaxed;
+}
+
+.dark {
+  .title {
+    color: $color-white;
+  }
+  .subtitle {
+    color: $on-dark-muted;
+  }
+  .eyebrow {
+    color: $color-gold-soft;
+  }
+}

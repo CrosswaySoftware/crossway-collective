@@ -1,0 +1,114 @@
+@use "@/styles/tokens" as *;
+
+.section {
+  position: relative;
+  overflow: hidden;
+  background: $color-navy;
+  color: $color-white;
+  padding: $space-section 0;
+  isolation: isolate;
+}
+
+.bg {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.glow {
+  position: absolute;
+  width: 55vw;
+  height: 55vw;
+  top: 50%;
+  inset-inline-start: 50%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, rgba(199, 154, 63, 0.2), transparent 60%);
+  filter: blur(50px);
+}
+
+.inner {
+  max-width: $container-max;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  align-items: center;
+
+  @media (min-width: 900px) {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+}
+
+.eyebrow {
+  color: $color-gold-soft;
+}
+
+.title {
+  margin: 1rem 0 0;
+  color: $color-white;
+  font-size: clamp(2rem, 3.8vw, 3rem);
+}
+
+.text {
+  margin: 1.1rem 0 0;
+  color: $on-dark-muted;
+  font-size: $text-md;
+  line-height: $leading-relaxed;
+  max-width: 44ch;
+}
+
+.searchBox {
+  background: rgba(247, 243, 234, 0.05);
+  border: 1px solid $on-dark-faint;
+  border-radius: $radius-lg;
+  padding: clamp(1.75rem, 3vw, 2.5rem);
+}
+
+.searchLabel {
+  display: block;
+  font-size: $text-xs;
+  font-weight: 700;
+  letter-spacing: $tracking-widest;
+  text-transform: uppercase;
+  color: $color-gold-soft;
+  margin-bottom: 1.1rem;
+}
+
+.chips {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.chip {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  font-family: $font-display;
+  font-size: $text-xl;
+  font-weight: 600;
+  color: $color-white;
+  padding-bottom: 0.7rem;
+  border-bottom: 1px solid $on-dark-faint;
+
+  &:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+.chipByline {
+  font-family: $font-sans;
+  font-size: $text-sm;
+  font-weight: 500;
+  color: $on-dark-muted;
+  letter-spacing: $tracking-wide;
+}
+
+.note {
+  margin: 1.2rem 0 0;
+  font-size: $text-sm;
+  color: $on-dark-muted;
+  font-style: italic;
+}

@@ -1,0 +1,394 @@
+@use "@/styles/tokens" as *;
+
+/* ── Hero ─────────────────────────────────────────────── */
+.hero {
+  position: relative;
+  min-height: 82vh;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  color: $color-white;
+  padding: calc(var(--cc-header-h) + 2rem) 0 clamp(2.5rem, 6vw, 4.5rem);
+  isolation: isolate;
+}
+
+.heroImage {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.heroImg {
+  object-fit: cover;
+}
+
+.heroShade {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to top, color-mix(in srgb, var(--brand-ink) 92%, black), color-mix(in srgb, var(--brand-ink) 45%, transparent) 55%, rgba(0, 0, 0, 0.35)),
+    linear-gradient(to right, color-mix(in srgb, var(--brand-ink) 70%, transparent), transparent 65%);
+}
+
+.heroInner {
+  max-width: $container-max;
+  margin-inline: auto;
+  width: 100%;
+}
+
+.back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: $text-sm;
+  font-weight: 600;
+  letter-spacing: $tracking-wide;
+  color: rgba(255, 253, 247, 0.8);
+  margin-bottom: 1.75rem;
+
+  &:hover {
+    color: $color-white;
+  }
+}
+
+[dir="rtl"] .back span {
+  transform: scaleX(-1);
+}
+
+.logoPlate {
+  display: inline-grid;
+  place-items: center;
+  background: $color-canvas-bright;
+  border-radius: $radius-md;
+  padding: 0.9rem 1.2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: $shadow-lift;
+  max-width: 220px;
+
+  &.onDark {
+    background: $color-navy-deep;
+    border: 1px solid rgba(199, 154, 63, 0.3);
+  }
+}
+
+.logo {
+  display: block;
+  width: auto;
+  height: 64px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.heading {
+  font-family: $font-sans;
+  font-size: $text-xs;
+  font-weight: 700;
+  letter-spacing: $tracking-widest;
+  text-transform: uppercase;
+  color: $color-gold-bright;
+}
+
+.name {
+  margin: 0.6rem 0 0;
+  color: $color-white;
+  font-size: clamp(2.6rem, 6vw, 4.5rem);
+  line-height: 1;
+}
+
+.byline {
+  margin: 0.6rem 0 0;
+  color: rgba(255, 253, 247, 0.75);
+  font-size: $text-sm;
+  letter-spacing: $tracking-wider;
+  text-transform: uppercase;
+}
+
+.tagline {
+  margin: 1.1rem 0 0;
+  font-family: $font-display;
+  font-style: italic;
+  font-size: clamp(1.4rem, 2.6vw, 2rem);
+  color: $color-white;
+  max-width: 26ch;
+}
+
+/* ── About / order ────────────────────────────────────── */
+.about {
+  padding: $space-section 0;
+  background: $color-canvas;
+}
+
+.aboutInner {
+  max-width: $container-max;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+
+  @media (min-width: 860px) {
+    grid-template-columns: 1.5fr 0.85fr;
+    gap: 4rem;
+    align-items: start;
+  }
+}
+
+.description {
+  font-family: $font-display;
+  font-size: clamp(1.4rem, 2.6vw, 1.95rem);
+  line-height: $leading-snug;
+  color: $color-ink;
+  font-weight: 500;
+  margin: 0;
+}
+
+.order {
+  margin-top: 2.25rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid $color-line;
+}
+
+.orderLabel {
+  display: block;
+  font-size: $text-xs;
+  font-weight: 700;
+  letter-spacing: $tracking-widest;
+  text-transform: uppercase;
+  color: $color-ink-faint;
+  margin-bottom: 1rem;
+}
+
+.orderBtns {
+  display: flex;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+}
+
+.btnSwiggy,
+.btnZomato {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.85rem 2rem;
+  border-radius: $radius-pill;
+  font-weight: 700;
+  font-size: $text-sm;
+  letter-spacing: $tracking-wider;
+  text-transform: uppercase;
+  transition: transform 0.3s $ease-out-expo, box-shadow 0.3s $ease-out-expo;
+  box-shadow: $shadow-soft;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: $shadow-lift;
+  }
+}
+
+.btnSwiggy {
+  background: #fc8019;
+  color: #fff;
+  &:hover {
+    color: #fff;
+  }
+}
+
+.btnZomato {
+  background: #e23744;
+  color: #fff;
+  &:hover {
+    color: #fff;
+  }
+}
+
+.facts {
+  background: $color-canvas-bright;
+  border: 1px solid $color-line;
+  border-radius: $radius-md;
+  padding: 1.75rem;
+
+  @media (min-width: 860px) {
+    position: sticky;
+    top: 120px;
+  }
+}
+
+.factsLabel {
+  display: block;
+  font-size: $text-xs;
+  font-weight: 700;
+  letter-spacing: $tracking-widest;
+  text-transform: uppercase;
+  color: var(--brand-accent);
+  margin-bottom: 1.1rem;
+}
+
+.perfectList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    font-size: $text-md;
+    font-weight: 500;
+    color: $color-ink;
+  }
+}
+
+.tick {
+  flex: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--brand-accent) 16%, transparent);
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 5px;
+    width: 5px;
+    height: 8px;
+    border: solid var(--brand-accent);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+}
+
+/* ── Gallery ──────────────────────────────────────────── */
+.gallery {
+  padding: $space-section 0;
+  background: $color-canvas-muted;
+}
+
+.galleryInner {
+  max-width: $container-max;
+  margin-inline: auto;
+}
+
+.galleryHead {
+  text-align: center;
+  margin-bottom: clamp(2rem, 4vw, 3rem);
+
+  :global(.cc-eyebrow) {
+    justify-content: center;
+  }
+}
+
+.galleryTitle {
+  margin: 0.7rem 0 0;
+  font-size: clamp(1.9rem, 3.4vw, 2.6rem);
+}
+
+.galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+
+  @media (min-width: 760px) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+}
+
+.galleryCell {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  border-radius: $radius-md;
+  overflow: hidden;
+  border: 1px solid $color-line;
+
+  &:hover .galleryImg {
+    transform: scale(1.05);
+  }
+}
+
+.galleryImg {
+  object-fit: cover;
+  transition: transform 0.6s $ease-out-expo;
+}
+
+/* ── Others ───────────────────────────────────────────── */
+.others {
+  padding: $space-section 0;
+  background: $color-canvas;
+}
+
+.othersInner {
+  max-width: $container-max;
+  margin-inline: auto;
+}
+
+.othersTitle {
+  text-align: center;
+  margin: 0 0 2rem;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+}
+
+.othersGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+
+  @media (min-width: 860px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.otherCard {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  border-radius: $radius-md;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  color: $color-white;
+  transition: transform 0.4s $ease-out-expo, box-shadow 0.4s $ease-out-expo;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: $shadow-lift;
+    color: $color-white;
+
+    .otherImg {
+      transform: scale(1.06);
+    }
+  }
+}
+
+.otherImg {
+  object-fit: cover;
+  transition: transform 0.6s $ease-out-expo;
+}
+
+.otherShade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(12, 19, 38, 0.85), transparent 60%);
+}
+
+.otherName {
+  position: relative;
+  z-index: 1;
+  padding: 1.1rem;
+  font-family: $font-display;
+  font-size: $text-xl;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.otherHeading {
+  font-family: $font-sans;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: $tracking-wide;
+  text-transform: uppercase;
+  color: var(--brand-accent);
+  color: color-mix(in srgb, var(--brand-accent) 60%, white);
+}

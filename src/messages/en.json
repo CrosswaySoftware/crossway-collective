@@ -1,0 +1,189 @@
+{
+  "LocaleSwitcher": {
+    "label": "Language",
+    "en": "English",
+    "ar": "العربية",
+    "fr": "Français"
+  },
+  "Nav": {
+    "brandName": "Crossway Collective",
+    "tagline": "Chennai's Home of Great Food Brands",
+    "home": "Home",
+    "brands": "Our Brands",
+    "about": "About",
+    "contact": "Contact",
+    "orderNow": "Order Now",
+    "menuToggle": "Open menu",
+    "menuClose": "Close menu",
+    "menuTitle": "Main menu",
+    "mailUs": "collective@crosswayhotels.com",
+    "phone": "+91 97512 77770"
+  },
+  "Metadata": {
+    "homeTitle": "Crossway Collective — Chennai's Home of Great Food Brands",
+    "homeDescription": "Crossway Collective brings together unique food brands crafted for today's food lovers — from authentic Tamil flavours and Indian classics to global cuisine and premium desserts. Available exclusively on Swiggy and Zomato across Chennai."
+  },
+  "Home": {
+    "hero": {
+      "eyebrow": "From the house of Crossway",
+      "title": "Chennai's Home of",
+      "titleAccent": "Great Food Brands",
+      "subtitle": "Crossway Collective brings together unique food brands crafted for today's food lovers. From authentic Tamil flavours and Indian classics to global cuisine and premium desserts, our brands are designed to deliver exceptional food experiences right to your doorstep.",
+      "availability": "Available exclusively on Swiggy and Zomato across Chennai.",
+      "cta": "Order your favourites today",
+      "ctaBrands": "Explore our brands"
+    },
+    "about": {
+      "eyebrow": "About Crossway Collective",
+      "title": "One Collective. Multiple Cravings.",
+      "p1": "Crossway Collective is a curated portfolio of food brands created to serve every craving, every mood, and every occasion.",
+      "p2": "Built on a passion for quality ingredients, authentic recipes, and consistent customer experiences, each brand under the Collective offers its own unique culinary identity while sharing the same commitment to excellence.",
+      "p3": "Whether you're looking for comforting South Indian meals, flavour-packed Indian favourites, café-style indulgences, global comfort food, or handcrafted desserts, Crossway Collective has something for everyone.",
+      "fresh1": "Freshly prepared",
+      "fresh2": "Carefully packed",
+      "fresh3": "Delivered to your doorstep"
+    },
+    "brands": {
+      "eyebrow": "Our Brands",
+      "title": "Five brands. One collective.",
+      "intro": "Each brand under the Collective offers its own unique culinary identity while sharing the same commitment to quality and taste.",
+      "viewBrand": "Discover",
+      "availability": "Available on Swiggy & Zomato"
+    },
+    "why": {
+      "eyebrow": "Why Order From Crossway Collective",
+      "title": "Great Food. Consistently Delivered.",
+      "items": {
+        "quality": {
+          "title": "Quality First",
+          "desc": "Fresh ingredients and carefully crafted recipes."
+        },
+        "brands": {
+          "title": "Multiple Brands. One Trusted Collective.",
+          "desc": "Different cuisines and experiences under one food group."
+        },
+        "delivery": {
+          "title": "Delivery Optimised",
+          "desc": "Designed specifically for food delivery and takeaway."
+        },
+        "taste": {
+          "title": "Consistent Taste & Quality",
+          "desc": "Every order prepared with care and attention to detail."
+        },
+        "ordering": {
+          "title": "Convenient Ordering",
+          "desc": "Available across leading food delivery platforms."
+        }
+      }
+    },
+    "serving": {
+      "eyebrow": "Serving Chennai",
+      "title": "Delivering Across Chennai",
+      "text": "Our brands are available through Swiggy and Zomato across multiple service locations in Chennai.",
+      "searchLabel": "Search for",
+      "platformNote": "on your preferred delivery platform."
+    },
+    "finalCta": {
+      "eyebrow": "Craving something delicious?",
+      "title": "Craving Something Delicious?",
+      "text": "Explore our brands and discover your next favourite meal.",
+      "fresh": "Freshly Prepared. Carefully Packed. Delivered Across Chennai.",
+      "button": "Order now on Swiggy & Zomato"
+    }
+  },
+  "About": {
+    "meta": {
+      "title": "About Crossway Collective",
+      "description": "One Collective. Multiple Cravings. A curated portfolio of food brands from the house of Crossway, delivering across Chennai on Swiggy and Zomato."
+    },
+    "hero": {
+      "eyebrow": "About Crossway Collective",
+      "title": "One Collective. Multiple Cravings.",
+      "subtitle": "A curated portfolio of food brands created to serve every craving, every mood, and every occasion."
+    },
+    "story": {
+      "p1": "Crossway Collective is a curated portfolio of food brands created to serve every craving, every mood, and every occasion.",
+      "p2": "Built on a passion for quality ingredients, authentic recipes, and consistent customer experiences, each brand under the Collective offers its own unique culinary identity while sharing the same commitment to excellence.",
+      "p3": "Whether you're looking for comforting South Indian meals, flavour-packed Indian favourites, café-style indulgences, global comfort food, or handcrafted desserts, Crossway Collective has something for everyone."
+    }
+  },
+  "BrandsPage": {
+    "meta": {
+      "title": "Our Brands",
+      "description": "Meet the food brands of Crossway Collective: Svanna, Pucca South, Mirea Café, The Saddle Room and Reejo Bakes — available on Swiggy and Zomato across Chennai."
+    },
+    "eyebrow": "Our Brands",
+    "title": "One Collective. Multiple Cravings.",
+    "subtitle": "Five distinct food brands, each with its own culinary identity — all sharing the same commitment to quality and taste."
+  },
+  "BrandDetail": {
+    "backToBrands": "All brands",
+    "perfectForLabel": "Perfect for",
+    "availableLabel": "Available on",
+    "galleryLabel": "From the kitchen",
+    "otherBrands": "More from the Collective",
+    "orderCta": "Order now",
+    "metaSuffix": "Crossway Collective"
+  },
+  "Brands": {
+    "svanna": {
+      "heading": "Best of Indian Flavours",
+      "tagline": "A celebration of India's rich culinary heritage.",
+      "description": "From aromatic biryanis and flavourful curries to regional favourites and chef-crafted specialties, Svanna brings together the best of Indian cuisine in every order.",
+      "perfectFor": ["Family meals", "Office lunches", "Weekend feasts", "Special occasions"]
+    },
+    "pucca": {
+      "heading": "Flavours of South India",
+      "tagline": "Authentic South Indian flavours inspired by the rich culinary traditions of Tamil Nadu and Kerala.",
+      "description": "Pucca South brings together cherished regional recipes, fresh local ingredients, and time-honoured cooking techniques to create wholesome meals that celebrate the vibrant food culture of South India. From comforting Tamil classics to flavourful Kerala specialties, every dish is prepared to deliver the warmth and authenticity of home.",
+      "perfectFor": ["Authentic South Indian meals", "Traditional Tamil Nadu & Kerala favourites", "Family dining at home", "Everyday comfort food"]
+    },
+    "mirea": {
+      "heading": "Global & Pan-Asian Cuisine",
+      "tagline": "Contemporary café favourites inspired by global flavours.",
+      "description": "From Asian-inspired dishes and comfort bowls to café classics and handcrafted beverages, Mirea Café offers a modern food experience delivered fresh.",
+      "perfectFor": ["Working lunches", "Casual dining", "Coffee breaks", "Evening cravings"]
+    },
+    "saddle": {
+      "heading": "Global & Indian Food",
+      "tagline": "Comfort food without borders.",
+      "description": "The Saddle Room brings together global favourites and Indian classics, creating a menu that's perfect for every mood and every meal.",
+      "perfectFor": ["Group orders", "Weekend treats", "Comfort food lovers"]
+    },
+    "reejo": {
+      "heading": "Premium Desserts",
+      "tagline": "Made to celebrate life's sweetest moments.",
+      "description": "From indulgent cakes and handcrafted pastries to premium desserts and bakery favourites, Reejo Bakes delivers happiness in every bite.",
+      "perfectFor": ["Birthdays", "Celebrations", "Gifting", "Everyday indulgence"]
+    }
+  },
+  "Contact": {
+    "meta": {
+      "title": "Contact",
+      "description": "Get in touch with Crossway Collective, or order our brands on Swiggy and Zomato across Chennai."
+    },
+    "eyebrow": "Contact",
+    "title": "Let's talk food",
+    "subtitle": "For partnerships, catering enquiries or feedback, our team is here to help. To order, find us on Swiggy and Zomato across Chennai.",
+    "emailLabel": "Email",
+    "phoneLabel": "Call",
+    "cityLabel": "Serving",
+    "orderLabel": "Order online",
+    "orderText": "Search for our brands on Swiggy and Zomato to order across Chennai."
+  },
+  "Footer": {
+    "tagline": "Chennai's Home of Great Food Brands",
+    "brandsHeading": "Our Brands",
+    "exploreHeading": "Explore",
+    "orderHeading": "Order Online",
+    "contactHeading": "Contact",
+    "home": "Home",
+    "about": "About",
+    "brands": "Our Brands",
+    "contact": "Contact",
+    "swiggy": "Swiggy",
+    "zomato": "Zomato",
+    "partOf": "Part of the Crossway family of hospitality brands.",
+    "copyright": "© {year} Crossway Collective. All rights reserved."
+  }
+}

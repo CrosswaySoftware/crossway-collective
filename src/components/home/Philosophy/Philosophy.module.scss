@@ -1,0 +1,72 @@
+@use "@/styles/tokens" as *;
+
+.section {
+  padding: $space-section 0;
+  background: $color-canvas;
+}
+
+.inner {
+  max-width: $container-max;
+  margin-inline: auto;
+}
+
+.grid {
+  margin-top: clamp(2.5rem, 5vw, 3.5rem);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+
+  @media (min-width: 560px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 900px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (min-width: 1160px) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.card {
+  background: $color-canvas-bright;
+  border: 1px solid $color-line;
+  border-radius: $radius-md;
+  padding: 1.75rem 1.5rem;
+  transition: transform 0.4s $ease-out-expo, box-shadow 0.4s $ease-out-expo;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: $shadow-card;
+  }
+}
+
+.icon {
+  display: inline-grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: $radius-sm;
+  background: linear-gradient(150deg, rgba(199, 154, 63, 0.16), rgba(199, 154, 63, 0.04));
+  color: $color-gold-deep;
+  margin-bottom: 1.1rem;
+
+  svg {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+.cardTitle {
+  font-size: $text-xl;
+  margin: 0 0 0.5rem;
+  color: $color-ink;
+}
+
+.cardDesc {
+  margin: 0;
+  font-size: $text-sm;
+  color: $color-ink-muted;
+  line-height: $leading-relaxed;
+}
