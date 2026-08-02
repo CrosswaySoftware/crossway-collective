@@ -7,7 +7,7 @@ import { Link } from "@/i18n/navigation";
 import { Reveal } from "@/components/motion/Reveal";
 import { BRANDS, BRAND_SLUGS, getBrand } from "@/config/brands";
 import { routing } from "@/i18n/routing";
-import { SITE } from "@/config/site";
+import { OrderPlatformLinks } from "@/components/ui/OrderPlatformLinks/OrderPlatformLinks";
 import styles from "./brandDetail.module.scss";
 
 export function generateStaticParams() {
@@ -91,12 +91,7 @@ function BrandDetailView({ slug }: { slug: string }) {
             <div className={styles.order}>
               <span className={styles.orderLabel}>{tD("availableLabel")}</span>
               <div className={styles.orderBtns}>
-                <a href={SITE.order.swiggy} target="_blank" rel="noopener noreferrer" className={styles.btnSwiggy}>
-                  Swiggy
-                </a>
-                <a href={SITE.order.zomato} target="_blank" rel="noopener noreferrer" className={styles.btnZomato}>
-                  Zomato
-                </a>
+                <OrderPlatformLinks variant="button" />
               </div>
             </div>
           </div>

@@ -17,8 +17,17 @@ export type Brand = {
   images: string[];
 };
 
+/** Image counts per brand (from scripts/brand-image-map.json curation) */
+const IMAGE_COUNTS: Record<string, number> = {
+  svanna: 10,
+  "pucca-south": 8,
+  "mirea-cafe": 9,
+  "the-saddle-room": 11,
+  "reejo-bakes": 8,
+};
+
 function gallery(slug: string, count: number): string[] {
-  return Array.from({ length: count }, (_, i) => `/images/${slug}/${i + 1}.jpg`);
+  return Array.from({ length: count }, (_, i) => `/images/${slug}/${i + 1}.webp`);
 }
 
 export const BRANDS: Brand[] = [
@@ -32,7 +41,7 @@ export const BRANDS: Brand[] = [
     accent: "#c79a3f",
     accentSoft: "#d9b96d",
     ink: "#121a36",
-    images: gallery("svanna", 8),
+    images: gallery("svanna", IMAGE_COUNTS.svanna),
   },
   {
     slug: "pucca-south",
@@ -43,7 +52,7 @@ export const BRANDS: Brand[] = [
     accent: "#c0392b",
     accentSoft: "#e0772f",
     ink: "#5a1a12",
-    images: gallery("pucca-south", 6),
+    images: gallery("pucca-south", IMAGE_COUNTS["pucca-south"]),
   },
   {
     slug: "mirea-cafe",
@@ -54,7 +63,7 @@ export const BRANDS: Brand[] = [
     accent: "#7a4a2b",
     accentSoft: "#b07f57",
     ink: "#2c1a10",
-    images: gallery("mirea-cafe", 6),
+    images: gallery("mirea-cafe", IMAGE_COUNTS["mirea-cafe"]),
   },
   {
     slug: "the-saddle-room",
@@ -65,7 +74,7 @@ export const BRANDS: Brand[] = [
     accent: "#a9702f",
     accentSoft: "#c69455",
     ink: "#241a12",
-    images: gallery("the-saddle-room", 7),
+    images: gallery("the-saddle-room", IMAGE_COUNTS["the-saddle-room"]),
   },
   {
     slug: "reejo-bakes",
@@ -75,7 +84,7 @@ export const BRANDS: Brand[] = [
     accent: "#c04f78",
     accentSoft: "#d98aa5",
     ink: "#3a1524",
-    images: gallery("reejo-bakes", 6),
+    images: gallery("reejo-bakes", IMAGE_COUNTS["reejo-bakes"]),
   },
 ];
 

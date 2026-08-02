@@ -3,6 +3,7 @@ import { getTranslations } from "next-intl/server";
 import { useTranslations } from "next-intl";
 import { PageHero } from "@/components/ui/PageHero/PageHero";
 import { Reveal } from "@/components/motion/Reveal";
+import { OrderPlatformLinks } from "@/components/ui/OrderPlatformLinks/OrderPlatformLinks";
 import { SITE } from "@/config/site";
 import styles from "./contact.module.scss";
 
@@ -50,12 +51,7 @@ export default function ContactPage() {
               <p>{t("orderText")}</p>
             </div>
             <div className={styles.orderBtns}>
-              <a href={SITE.order.swiggy} target="_blank" rel="noopener noreferrer" className={styles.btnSwiggy}>
-                Swiggy
-              </a>
-              <a href={SITE.order.zomato} target="_blank" rel="noopener noreferrer" className={styles.btnZomato}>
-                Zomato
-              </a>
+              <OrderPlatformLinks variant="button" />
             </div>
           </Reveal>
         </div>

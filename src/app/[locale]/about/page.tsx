@@ -32,10 +32,10 @@ export default function AboutPage() {
         <div className={styles.storyInner}>
           <div className={styles.storyMedia}>
             <Reveal className={styles.mediaMain}>
-              <Image src="/images/svanna/3.jpg" alt="" fill sizes="(max-width: 900px) 90vw, 42vw" />
+              <Image src="/images/svanna/2.webp" alt="" fill sizes="(max-width: 900px) 90vw, 42vw" />
             </Reveal>
             <Reveal delay={0.12} className={styles.mediaFloat}>
-              <Image src="/images/reejo-bakes/2.jpg" alt="" fill sizes="180px" />
+              <Image src="/images/reejo-bakes/1.webp" alt="" fill sizes="180px" />
             </Reveal>
           </div>
           <div className={styles.storyBody}>

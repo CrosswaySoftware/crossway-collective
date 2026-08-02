@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import { Reveal } from "@/components/motion/Reveal";
-import { SITE } from "@/config/site";
+import { OrderPlatformLinks } from "@/components/ui/OrderPlatformLinks/OrderPlatformLinks";
 import styles from "./DeliveryCTA.module.scss";
 
 export function DeliveryCTA() {
@@ -16,12 +16,7 @@ export function DeliveryCTA() {
             <h2 className={styles.title}>{t("title")}</h2>
             <p className={styles.text}>{t("text")}</p>
             <div className={styles.actions}>
-              <a href={SITE.order.swiggy} target="_blank" rel="noopener noreferrer" className={styles.btnSwiggy}>
-                Swiggy
-              </a>
-              <a href={SITE.order.zomato} target="_blank" rel="noopener noreferrer" className={styles.btnZomato}>
-                Zomato
-              </a>
+              <OrderPlatformLinks variant="button" />
             </div>
             <p className={styles.fresh}>{t("fresh")}</p>
           </div>

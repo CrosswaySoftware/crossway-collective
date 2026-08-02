@@ -163,41 +163,6 @@
   flex-wrap: wrap;
 }
 
-.btnSwiggy,
-.btnZomato {
-  display: inline-flex;
-  align-items: center;
-  padding: 0.85rem 2rem;
-  border-radius: $radius-pill;
-  font-weight: 700;
-  font-size: $text-sm;
-  letter-spacing: $tracking-wider;
-  text-transform: uppercase;
-  transition: transform 0.3s $ease-out-expo, box-shadow 0.3s $ease-out-expo;
-  box-shadow: $shadow-soft;
-
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: $shadow-lift;
-  }
-}
-
-.btnSwiggy {
-  background: #fc8019;
-  color: #fff;
-  &:hover {
-    color: #fff;
-  }
-}
-
-.btnZomato {
-  background: #e23744;
-  color: #fff;
-  &:hover {
-    color: #fff;
-  }
-}
-
 .facts {
   background: $color-canvas-bright;
   border: 1px solid $color-line;

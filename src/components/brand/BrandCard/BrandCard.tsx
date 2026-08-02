@@ -2,6 +2,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import type { Brand } from "@/config/brands";
+import { OrderPlatformLinks } from "@/components/ui/OrderPlatformLinks/OrderPlatformLinks";
 import styles from "./BrandCard.module.scss";
 
 export function BrandCard({ brand }: { brand: Brand }) {
@@ -28,7 +29,9 @@ export function BrandCard({ brand }: { brand: Brand }) {
           className={styles.img}
         />
         <span className={styles.shade} aria-hidden />
-        <span className={styles.badge}>{tHome("availability")}</span>
+        <span className={styles.badge}>
+          <OrderPlatformLinks variant="badge" />
+        </span>
       </Link>
 
       <div className={styles.body}>

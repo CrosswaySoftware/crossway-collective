@@ -8,7 +8,10 @@
     "dev:poll": "WATCHPACK_POLLING=true next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "compress:newimages": "node scripts/compress-newimages.cjs --force",
+    "compress:newimages:dry": "node scripts/compress-newimages.cjs --dry-run",
+    "apply:brand-images": "node scripts/apply-brand-images.cjs"
   },
   "dependencies": {
     "framer-motion": "^11.18.0",
@@ -24,6 +27,7 @@
     "@types/react-dom": "^18.3.5",
     "eslint": "^8.57.1",
     "eslint-config-next": "^14.2.35",
+    "sharp": "^0.35.3",
     "typescript": "^5.8.2"
   }
 }

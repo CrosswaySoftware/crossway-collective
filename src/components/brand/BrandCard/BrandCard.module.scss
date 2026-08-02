@@ -42,14 +42,9 @@
   position: absolute;
   inset-inline-start: 0.9rem;
   bottom: 0.9rem;
-  font-size: 0.68rem;
-  font-weight: 600;
-  letter-spacing: $tracking-wide;
-  text-transform: uppercase;
-  color: $color-white;
-  background: color-mix(in srgb, var(--brand-accent) 88%, black 4%);
-  padding: 0.38rem 0.75rem;
-  border-radius: $radius-pill;
+  padding: 0.35rem 0.5rem;
+  border-radius: $radius-sm;
+  background: rgba(255, 255, 255, 0.92);
   box-shadow: $shadow-soft;
 }
 

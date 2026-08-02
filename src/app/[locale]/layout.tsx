@@ -59,13 +59,13 @@ export async function generateMetadata({
       title: t("homeTitle"),
       description: t("homeDescription"),
       url: `${SITE.url}/${locale}`,
-      images: [{ url: "/images/svanna/1.jpg", width: 1024, height: 683, alt: SITE.name }],
+      images: [{ url: "/images/svanna/1.webp", width: 1920, height: 1280, alt: SITE.name }],
     },
     twitter: {
       card: "summary_large_image",
       title: t("homeTitle"),
       description: t("homeDescription"),
-      images: ["/images/svanna/1.jpg"],
+      images: ["/images/svanna/1.webp"],
     },
   };
 }

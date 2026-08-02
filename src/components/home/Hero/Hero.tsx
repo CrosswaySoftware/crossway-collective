@@ -83,13 +83,13 @@ export function Hero() {
           aria-hidden
         >
           <div className={styles.imgMain}>
-            <Image src="/images/svanna/1.jpg" alt="" fill sizes="(max-width: 980px) 90vw, 44vw" priority />
+            <Image src="/images/svanna/1.webp" alt="" fill sizes="(max-width: 980px) 90vw, 44vw" priority />
           </div>
           <div className={styles.imgFloat}>
-            <Image src="/images/reejo-bakes/1.jpg" alt="" fill sizes="220px" />
+            <Image src="/images/reejo-bakes/1.webp" alt="" fill sizes="220px" />
           </div>
           <div className={styles.imgFloat2}>
-            <Image src="/images/pucca-south/2.jpg" alt="" fill sizes="200px" />
+            <Image src="/images/pucca-south/1.webp" alt="" fill sizes="200px" />
           </div>
         </motion.div>
       </div>

@@ -1,0 +1,58 @@
+{
+  "svanna": [
+    { "src": "MRC Day 3-12.webp", "reason": "Full tandoori chicken platter — iconic North Indian tandoor hero" },
+    { "src": "MRC Day 1-60.webp", "reason": "Chicken biryani with egg, birista, raita — classic Svanna biryani" },
+    { "src": "MRC Day 1-67.webp", "reason": "Spiced meat biryani with fried onions and raita" },
+    { "src": "MRC Day 3-31.webp", "reason": "Butter chicken / tikka masala — North Indian curry staple" },
+    { "src": "MRC Day 1-101.webp", "reason": "Dal makhani with cream swirl — premium North Indian lentil" },
+    { "src": "MRC Day 1-14.webp", "reason": "Malai tikka with char marks — tandoor kebab" },
+    { "src": "MRC Day 1-12.webp", "reason": "Grilled kebab/tikka pieces — tandoor starter" },
+    { "src": "MRC Day 1-34.webp", "reason": "Tandoori prawns with mint chutney — pan-Indian tandoor seafood" },
+    { "src": "MRC Day 3-57.webp", "reason": "Spice-crusted lamb chops with yogurt dip — North Indian grill" },
+    { "src": "MRC Day 1-81.webp", "reason": "Tandoor chicken in creamy North Indian gravy" }
+  ],
+  "pucca-south": [
+    { "src": "MRC Day 3.webp", "reason": "Chemmeen-style prawn roast with curry leaves — Kerala coastal" },
+    { "src": "MRC Day 2-88.webp", "reason": "Dry pepper fry with coconut and curry leaves — South Indian ularthiyathu" },
+    { "src": "MRC Day 2-174.webp", "reason": "Sukka/pepper fry with pearl onions — Tamil/Kerala dry roast" },
+    { "src": "MRC Day 1-85.webp", "reason": "Dark spiced dry roast with curry leaf garnish — sukka style" },
+    { "src": "MRC Day 1-41.webp", "reason": "Thick curry with pepper masala and curry leaves — Chettinad cues" },
+    { "src": "MRC Day 2-184.webp", "reason": "Chicken 65 — iconic South Indian fried starter" },
+    { "src": "MRC Day 1-110.webp", "reason": "Karuppu Kavuni black rice halwa — South Indian traditional sweet" },
+    { "src": "MRC Day 1-18.webp", "reason": "Coconut-cream curry — South Indian moilee-style bowl" }
+  ],
+  "mirea-cafe": [
+    { "src": "MRC Day 2-135.webp", "reason": "Nasi goreng with satay and fried egg — Pan-Asian bowl hero" },
+    { "src": "MRC Day 3-111.webp", "reason": "Crispy kataifi-wrapped prawns — modern Pan-Asian appetizer" },
+    { "src": "MRC Day 1-54.webp", "reason": "Cashew chicken stir-fry — Pan-Asian bowl" },
+    { "src": "MRC Day 2-124.webp", "reason": "Grilled satay skewers with peanut sauce — Pan-Asian starter" },
+    { "src": "MRC Day 2-144.webp", "reason": "Grilled chicken Caesar salad — modern global café main" },
+    { "src": "MRC Day 3-73.webp", "reason": "Chili stir-fry with scallions — Pan-Asian café side" },
+    { "src": "MRC Day 2-165.webp", "reason": "Melted cheese toast — café snack" },
+    { "src": "MRC Day 3-19.webp", "reason": "Cheese quesadilla triangles — global café comfort" },
+    { "src": "MRC Day 2-43.webp", "reason": "Creamy chicken soup with garlic bread — café comfort pairing" }
+  ],
+  "the-saddle-room": [
+    { "src": "MRC Day 2-101.webp", "reason": "Gourmet burger with fries — western comfort hero" },
+    { "src": "MRC Day 1-2.webp", "reason": "Paneer tikka pizza — Indian-western fusion comfort" },
+    { "src": "MRC Day 2-59.webp", "reason": "Fish and chips with tartar — classic western main" },
+    { "src": "MRC Day 2-106.webp", "reason": "Grilled fish with mash and vegetables — western grill" },
+    { "src": "MRC Day 3-65.webp", "reason": "Layered meat lasagna — Italian comfort main" },
+    { "src": "MRC Day 2-187.webp", "reason": "Creamy spaghetti with chicken — western pasta" },
+    { "src": "MRC Day 1-51.webp", "reason": "Penne Alfredo with garlic bread — pasta comfort" },
+    { "src": "MRC Day 3-61.webp", "reason": "Shrimp spaghetti aglio — global pasta" },
+    { "src": "MRC Day 2-68.webp", "reason": "Crispy fried calamari — western appetizer" },
+    { "src": "MRC Day 2-71.webp", "reason": "Golden fried strips with dip — comfort snack" },
+    { "src": "MRC Day 3-14.webp", "reason": "Breaded chicken tenders — western fried starter" }
+  ],
+  "reejo-bakes": [
+    { "src": "MRC Day 3-116.webp", "reason": "Cheesecake with strawberry compote — premium dessert hero" },
+    { "src": "MRC Day 2-13.webp", "reason": "Caramel tart with hazelnuts — artisan pastry" },
+    { "src": "MRC Day 2-6.webp", "reason": "Millionaire's shortbread bar — premium bakery" },
+    { "src": "MRC Day 2-10.webp", "reason": "Layered brownie bar with Biscoff-style frosting" },
+    { "src": "MRC Day 2-3.webp", "reason": "Blondie with lemon curd — bakery bar" },
+    { "src": "MRC Day 2-18.webp", "reason": "Pecan nut bar on shortbread — bakery sweet" },
+    { "src": "MRC Day 1-109.webp", "reason": "Gulab jamun in syrup — Indian dessert sweet" },
+    { "src": "MRC Day 3-78.webp", "reason": "Gajar ka halwa with nuts — traditional carrot pudding" }
+  ]
+}

@@ -3,6 +3,7 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { BRANDS } from "@/config/brands";
 import { SITE } from "@/config/site";
+import { OrderPlatformLinks } from "@/components/ui/OrderPlatformLinks/OrderPlatformLinks";
 import styles from "./SiteFooter.module.scss";
 
 export function SiteFooter() {
@@ -56,18 +57,7 @@ export function SiteFooter() {
 
         <div className={styles.col}>
           <h3 className={styles.heading}>{t("orderHeading")}</h3>
-          <ul className={styles.list}>
-            <li>
-              <a href={SITE.order.swiggy} target="_blank" rel="noopener noreferrer">
-                {t("swiggy")}
-              </a>
-            </li>
-            <li>
-              <a href={SITE.order.zomato} target="_blank" rel="noopener noreferrer">
-                {t("zomato")}
-              </a>
-            </li>
-          </ul>
+          <OrderPlatformLinks variant="inline" className={styles.orderLogos} />
           <h3 className={`${styles.heading} ${styles.headingGap}`}>{t("contactHeading")}</h3>
           <ul className={styles.list}>
             <li>

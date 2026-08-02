@@ -59,45 +59,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
   flex-wrap: wrap;
-}
-
-.btnSwiggy,
-.btnZomato {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.95rem 2.2rem;
-  border-radius: $radius-pill;
-  font-weight: 700;
-  font-size: $text-sm;
-  letter-spacing: $tracking-wider;
-  text-transform: uppercase;
-  transition: transform 0.3s $ease-out-expo, box-shadow 0.3s $ease-out-expo;
-  box-shadow: $shadow-lift;
-
-  &:hover {
-    transform: translateY(-2px);
-  }
-}
-
-.btnSwiggy {
-  background: #fc8019;
-  color: #fff;
-
-  &:hover {
-    color: #fff;
-  }
-}
-
-.btnZomato {
-  background: #e23744;
-  color: #fff;
-
-  &:hover {
-    color: #fff;
-  }
 }
 
 .fresh {

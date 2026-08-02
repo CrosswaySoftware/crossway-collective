@@ -11,5 +11,9 @@ export const SITE = {
   order: {
     swiggy: "https://www.swiggy.com",
     zomato: "https://www.zomato.com",
+    logos: {
+      swiggy: "/logos/swiggy.jpeg",
+      zomato: "/logos/zomato.png",
+    },
   },
 } as const;

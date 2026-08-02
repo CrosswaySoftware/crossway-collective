@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import { Reveal } from "@/components/motion/Reveal";
 import { BRANDS } from "@/config/brands";
+import { OrderPlatformLinks } from "@/components/ui/OrderPlatformLinks/OrderPlatformLinks";
 import styles from "./Motto.module.scss";
 
 export function Motto() {
@@ -28,6 +29,7 @@ export function Motto() {
             ))}
           </div>
           <p className={styles.note}>{t("platformNote")}</p>
+          <OrderPlatformLinks variant="inline" className={styles.platformLogos} />
         </Reveal>
       </div>
     </section>
